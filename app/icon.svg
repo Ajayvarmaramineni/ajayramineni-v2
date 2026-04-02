@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark background with slight rounding -->
+  <rect width="32" height="32" rx="7" fill="#111111"/>
+  <!-- AR monogram in white -->
+  <text
+    x="13"
+    y="22"
+    font-family="Arial Black, Impact, sans-serif"
+    font-weight="900"
+    font-size="15"
+    fill="#f8f8f8"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >AR</text>
+  <!-- Orange circle dot -->
+  <circle cx="26" cy="20" r="2.2" fill="#FD7F2C"/>
+</svg>
