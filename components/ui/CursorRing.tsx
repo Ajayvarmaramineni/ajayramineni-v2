@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function CursorRing() {
-  const ringRef = useRef<HTMLDivElement>(null);
-  const dotRef = useRef<HTMLDivElement>(null);
-  const pos = useRef({ x: 0, y: 0 });
-  const ringPos = useRef({ x: 0, y: 0 });
-  const raf = useRef<number>(0);
-  const [hovered, setHovered] = useState(false);
-  const [hidden, setHidden] = useState(false);
+  const ringRef  = useRef<HTMLDivElement>(null);
+  const dotRef   = useRef<HTMLDivElement>(null);
+  const pos      = useRef({ x: -100, y: -100 });   // start off-screen — no flicker at (0,0)
+  const ringPos  = useRef({ x: -100, y: -100 });
+  const raf      = useRef<number>(0);
+  const [hovered, setHovered]   = useState(false);
+  const [visible, setVisible]   = useState(false);  // hide until first mousemove
 
   useEffect(() => {
     // Don't run on touch devices
@@ -23,18 +23,17 @@ export default function CursorRing() {
         dotRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
       }
 
-      // Detect hover over interactive elements
+      // Show custom cursor on first move
+      if (!visible) setVisible(true);
+
+      // Expand ring over interactive elements
       const target = e.target as HTMLElement;
       const isInteractive = target.closest("a, button, [role='button'], input, textarea, select, label");
       setHovered(!!isInteractive);
-
-      // Detect hover over long-form text — hide ring to avoid distraction
-      const isText = target.closest("p, li, blockquote");
-      setHidden(!!isText);
     };
 
-    const onLeave = () => setHidden(true);
-    const onEnter = () => setHidden(false);
+    const onLeave = () => setVisible(false);
+    const onEnter = () => setVisible(true);
 
     // Smooth lag loop for the ring
     const loop = () => {
@@ -59,7 +58,7 @@ export default function CursorRing() {
       document.documentElement.removeEventListener("mouseenter", onEnter);
       cancelAnimationFrame(raf.current);
     };
-  }, []);
+  }, [visible]);
 
   return (
     <>
@@ -68,43 +67,43 @@ export default function CursorRing() {
         ref={ringRef}
         aria-hidden="true"
         style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: hovered ? 26 : 16,
-          height: hovered ? 26 : 16,
-          marginLeft: hovered ? -13 : -8,
-          marginTop: hovered ? -13 : -8,
-          borderRadius: "50%",
-          border: `1.5px solid ${hovered ? "#FD7F2C" : "rgba(253,127,44,0.55)"}`,
+          position:        "fixed",
+          top:             0,
+          left:            0,
+          width:           hovered ? 36 : 20,
+          height:          hovered ? 36 : 20,
+          marginLeft:      hovered ? -18 : -10,
+          marginTop:       hovered ? -18 : -10,
+          borderRadius:    "50%",
+          border:          `1.5px solid ${hovered ? "#FD7F2C" : "rgba(253,127,44,0.5)"}`,
           backgroundColor: hovered ? "rgba(253,127,44,0.08)" : "transparent",
-          pointerEvents: "none",
-          zIndex: 9999,
-          opacity: hidden ? 0 : 1,
-          transition: "width 0.2s ease, height 0.2s ease, margin 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, opacity 0.15s ease",
-          willChange: "transform",
+          pointerEvents:   "none",
+          zIndex:          9999,
+          opacity:         visible ? 1 : 0,
+          transition:      "width 0.18s ease, height 0.18s ease, margin 0.18s ease, border-color 0.18s ease, background-color 0.18s ease, opacity 0.15s ease",
+          willChange:      "transform",
         }}
       />
 
-      {/* Instant dot */}
+      {/* Instant dot — always follows cursor precisely */}
       <div
         ref={dotRef}
         aria-hidden="true"
         style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: 4,
-          height: 4,
-          marginLeft: -2,
-          marginTop: -2,
-          borderRadius: "50%",
+          position:        "fixed",
+          top:             0,
+          left:            0,
+          width:           5,
+          height:          5,
+          marginLeft:      -2.5,
+          marginTop:       -2.5,
+          borderRadius:    "50%",
           backgroundColor: "#FD7F2C",
-          pointerEvents: "none",
-          zIndex: 9999,
-          opacity: hidden ? 0 : 1,
-          transition: "opacity 0.15s ease",
-          willChange: "transform",
+          pointerEvents:   "none",
+          zIndex:          10000,
+          opacity:         visible ? 1 : 0,
+          transition:      "opacity 0.15s ease",
+          willChange:      "transform",
         }}
       />
     </>
