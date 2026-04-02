@@ -109,6 +109,24 @@ export const projects: Project[] = [
   },
   {
     id: "06",
+    title: "EchoForge AI",
+    category: "Machine Learning",
+    gradient: "from-[#0a0a1a] via-[#1a0a2e] to-[#0d0d1f]",
+    accentColor: "#a855f7",
+    stack: ["Python", "FastAPI", "Coqui XTTS v2", "PyTorch", "REST API", "Git LFS"],
+    description:
+      "Self-hosted voice synthesis backend using Coqui XTTS v2. Clones and consistently reproduces an assistant-style voice from a single short WAV reference clip — no training required. Production-ready REST API with automatic GPU/CPU detection and cached conditioning latents for low-latency inference.",
+    outcome: "Zero-training voice cloning · Production REST API",
+    highlights: [
+      "Clones a consistent voice identity from a single WAV clip — no training needed",
+      "Sentence-aware synthesis with cached GPU/CPU latents for low-latency responses",
+      "Production-ready FastAPI backend with /speak, /health, and /info endpoints",
+    ],
+    github: "https://github.com/Ajayvarmaramineni/echoforge-ai",
+    live: null,
+  },
+  {
+    id: "07",
     title: "Business Dev at Visatree",
     category: "Strategy",
     gradient: "from-[#1a0a2e] via-[#2d1b69] to-[#0f172a]",
