@@ -1,0 +1,41 @@
+student_id,age,gpa,study_hours_per_week,attendance_pct,midterm_score,final_score,major,scholarship,passed
+1,20,3.8,25,95,88,91,Computer Science,Yes,Yes
+2,21,2.4,10,72,55,58,Business,No,Yes
+3,19,3.5,20,88,80,84,Mathematics,Yes,Yes
+4,22,1.9,6,60,40,44,History,No,No
+5,20,3.1,15,81,70,73,Computer Science,No,Yes
+6,23,2.7,12,75,62,65,Biology,No,Yes
+7,19,3.9,30,97,95,96,Physics,Yes,Yes
+8,21,2.2,8,65,48,50,Business,No,No
+9,20,3.4,18,84,78,80,Mathematics,Yes,Yes
+10,22,2.8,13,76,64,67,Computer Science,No,Yes
+11,21,1.7,5,55,35,38,History,No,No
+12,19,3.6,22,90,83,87,Physics,Yes,Yes
+13,23,2.5,11,70,58,61,Biology,No,Yes
+14,20,3.0,16,80,68,72,Computer Science,No,Yes
+15,22,3.7,26,93,89,92,Mathematics,Yes,Yes
+16,21,2.1,7,62,45,47,Business,No,No
+17,20,3.3,19,85,76,79,Computer Science,No,Yes
+18,19,2.9,14,78,66,69,Biology,No,Yes
+19,23,3.8,27,96,90,93,Physics,Yes,Yes
+20,21,2.6,12,73,60,63,History,No,Yes
+21,20,1.8,5,58,38,41,Business,No,No
+22,22,3.4,20,86,79,82,Computer Science,Yes,Yes
+23,19,3.0,15,80,70,73,Mathematics,No,Yes
+24,21,2.3,9,67,52,55,Biology,No,Yes
+25,20,3.6,23,91,85,88,Physics,Yes,Yes
+26,23,2.7,13,76,63,66,Computer Science,No,Yes
+27,21,1.6,4,52,32,35,History,No,No
+28,20,3.5,21,88,81,85,Mathematics,Yes,Yes
+29,22,2.4,10,71,56,59,Business,No,Yes
+30,19,3.9,28,98,93,95,Physics,Yes,Yes
+31,20,3.2,17,82,74,77,Computer Science,No,Yes
+32,21,2.8,13,77,65,68,Biology,No,Yes
+33,23,3.7,25,94,88,91,Mathematics,Yes,Yes
+34,20,2.0,7,61,43,46,History,No,No
+35,22,3.3,18,84,77,80,Computer Science,No,Yes
+36,19,2.6,11,72,60,63,Business,No,Yes
+37,21,3.8,26,95,90,92,Physics,Yes,Yes
+38,20,2.2,8,64,48,51,Biology,No,No
+39,23,3.5,22,89,83,86,Mathematics,Yes,Yes
+40,21,2.9,14,79,67,70,Computer Science,No,Yes

@@ -1,0 +1,8 @@
+# DataStatz backend — deployed via Docker on Render free tier
+# Runtime is Docker (configured in Render dashboard).
+# This file is for documentation/reference only.
+#
+# Docker image: python:3.11-slim
+# Build: pip install -r requirements.txt (no compilation needed — all pre-built wheels)
+# Start: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+# Health: GET /health
