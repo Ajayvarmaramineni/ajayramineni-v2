@@ -111,6 +111,13 @@ function renderMarkdown(content: string): ReactNode[] {
           ))}
         </ul>
       );
+    } else if (line.trim().startsWith("![")) {
+      const imgMatch = line.trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+      if (imgMatch && /^(https?:\/\/|\/)/.test(imgMatch[2])) {
+        elements.push(
+          <img key={i} src={imgMatch[2]} alt={imgMatch[1]} loading="lazy" className="rounded-lg max-w-full h-auto my-6 border border-[#222]" />
+        );
+      }
     } else if (line.trim() !== "") {
       elements.push(
         <p key={i} className="text-[#a1a1aa] leading-relaxed my-4">
