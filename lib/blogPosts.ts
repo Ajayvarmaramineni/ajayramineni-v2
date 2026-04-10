@@ -287,6 +287,48 @@ Two months ago, I was questioning everything. Now, I'm starting to accept that t
     `,
   },
 
+  {
+    slug: "whats-the-purpose",
+    title: "What's the Purpose?",
+    excerpt: "A reflective piece on freedom, purpose, and the discomfort of not knowing — written at an hour I probably shouldn't be awake.",
+    date: "July 2025",
+    readTime: "5 min",
+    tag: "Nights",
+    category: "nights",
+    featured: false,
+    content: `
+# What's the Purpose?
+
+Me? I am free man. Free to choose my own thoughts, free to work, free to go on a trek, free to travel around the world or lie in bed all day doing nothing but eating pizza without anyone telling me how.
+
+But that's the free part, the man part's a little different.
+
+When I am growing up, I used to think that the whole point is to arrive somewhere, earn money, live a comfortable life. Like there'd be a point things made sense, thinking that adults had it figured out, their world is ordered, rational and for a purpose in life.
+And when I got there. And it doesn't.
+The world isn't broken, it was never assembled in the first place. The order I thought when I was a kid, I was just too small to see the cracks.
+Here's what no one told me, and maybe that's a good news.
+Because once I stop waiting for things to be fixed, I get to start living in what it actually is. I learned to move through the mess without needing it to resolve. And people might call it cynicism, but it's not. That's the closet thing to real freedom I've found.
+
+> "In the midst of winter, I found there was within me an invincible summer." — Albert Camus
+
+Freedom found inside the mess, not outside of it.
+
+The reason why I penned this down for you to read is, not to quote something on existentialism, not to teach you how to live, it's just this thought lingering my head about what's the purpose of all this. At its simplest, maybe life is about three things: on a universal level, it's just about existing. On a human level, it's about raising the next generation to keep our story going. And on a social level, it's about the daily choice to simply be a good person. But even after all of that, something doesn't seems to fit, and maybe I will never know.
+And I think that's okay.
+
+Not in defeated way. Not in the way you shrug your shoulders and walk away from something too heavy to carry. More like, I've started to make peace with the open end of the question. Because every time I've chased an answer all the to way to its root, I find another door. Another "but why". It never really stopped.
+
+Maybe the purpose isn't a destination that you arrive at. Maybe it's something you build, badly, and rebuild again. Like a sentence you keep editing and never quite publish (just like this blog I am writing). Or maybe, this is the thought I keep coming back to, the discomfort of not knowing is the purpose. That restlessness, that itch. It's what kept me awake, kept me moving, kept me human.
+
+I don't have an answer for you. I barely have one for myself. But I think that's the most honest thing I can offer.
+What I really trying to say this whole time is not that life is meaningless, but that meaning was never come pre-packaged. No instruction manual, no written fate, no arrival point, and definitely not a moment where it all clicks and stays clicked. It's just you, whatever you choose, and the discomfort of not having the answers.
+
+I am still figuring it out. Some days feels like charity, most days feel like tired. But here I am, writing this at an hour I probably shouldn't be awake, and that feels like something. Maybe that enough for now.
+
+*- With Love, Aj✨*
+    `,
+  },
+
   // ── DEAR STRANGER SERIES ──────────────────────────────────────────────────
 
   {
