@@ -291,13 +291,15 @@ Two months ago, I was questioning everything. Now, I'm starting to accept that t
     slug: "whats-the-purpose",
     title: "What's the Purpose?",
     excerpt: "A reflective piece on freedom, purpose, and the discomfort of not knowing — written at an hour I probably shouldn't be awake.",
-    date: "July 2025",
+    date: "April 10, 2026",
     readTime: "5 min",
     tag: "Nights",
     category: "nights",
     featured: false,
     content: `
 # What's the Purpose?
+
+![Purpose Sunset](/images/purpose-sunset.jpg)
 
 Me? I am free man. Free to choose my own thoughts, free to work, free to go on a trek, free to travel around the world or lie in bed all day doing nothing but eating pizza without anyone telling me how.
 
