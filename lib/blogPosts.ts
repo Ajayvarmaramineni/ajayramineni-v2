@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 # What It Takes to Be a Rotaractor
 
-*By Ajay Ramineni, Director of Design & Editing - The Legends, Hyderabad*
+*By Ajay Ramineni,The Legends, Hyderabad*
 
 ![Rotaract Image](/images/rotaract.jpg)
 
@@ -77,14 +77,15 @@ That's what makes someone leave a mark. Not just being there, but actually being
 
 One of the most underrated things Rotaract teaches you is how to collaborate with people who are nothing like you.
 
-Your club is not a friend group you carefully curated. It's a mix of personalities, working styles, communication habits, and priorities that you did not select and cannot swap out. Someone will always respond to group chats too slowly. Someone will always be overly enthusiastic in meetings. Someone will have a completely different vision for the same project. Someone who never shows up but still shows up when urgency calls.
+This isn’t a friend group you picked. It’s a mix of personalities, work styles, and opinions. Someone replies late. Someone talks too much. Someone sees the same project completely differently. Someone disappears and then shows up when things get urgent.
 
-And you will have to make it work anyway.
+And still, you have to make it work.
 
-This, more than almost anything else, prepares you for real life. The professional world is full of teams you didn't choose, colleagues you didn't pick, and collaborations that require patience you didn't know you had. Rotaract gives you a safe space to develop that muscle, to practice disagreeing graciously, compromising without resentment, and finding common ground with people who see the world differently.
+That’s the real lesson. You learn how to adjust, communicate better, and disagree without making it personal. You figure out how to find common ground even when it’s not easy.
 
-The friendships that come out of this, by the way, are some of the most genuine you'll find. There's something about building things together, especially hard things, that bonds people in ways that casual socializing never quite does. I personally found some great relationships that I would always be grateful for.
+This is what real life looks like too. You won’t always choose your team, but you still have to work with them.And somewhere in all this, you build real connections. When you go through messy and hard work together, the bond is different.
 
+I’ve found some really meaningful relationships here, and that’s something I’ll always be grateful for.
 
 ## It Takes Knowing Why You're Here
 
@@ -92,11 +93,11 @@ Ultimately, what it takes to be a Rotaractor comes down to one thing: knowing yo
 
 Not the polished answer you rehearse at a membership drive. The real one, the one that gets you out of bed for a 7 AM project setup, keeps you up editing something at midnight because you want it to be just right, and makes you feel, at the end of a long and chaotic event, that every minute of it was worth it.
 
-Rotaract is not a line on a resume. It is not a social club or an obligation you check off. It is a choice made repeatedly, in big moments and small ones, to be someone who shows up, who gives, who grows, who cares. It is a mirror that reflects back who you are, and a forge that shapes who you are becoming.
+Rotaract is not just a resume line or something you do for the sake of it. It’s a choice you make again and again. To show up, to give, to grow, and to care.
 
-You will leave this organization different from how you entered it. More patient, more resilient, more human. You will carry with you memories of late nights and early mornings, of projects that didn't go to plan and ones that exceeded every expectation. You will carry the faces of people who believed in you before you believed in yourself.
+Somewhere along the way, it changes you. You become more patient, more resilient, and more aware of others. You go through messy projects, long days, small wins, and moments that stay with you.And you carry people with you. The ones who believed in you and helped you grow.
 
-That is what it takes to be a Rotaractor. Not perfection. Not experience. Just the willingness to begin, and the commitment to keep going.
+That’s what it takes. Not perfection or experience. Just starting, and choosing to keep going.
 
 *Service Above Self* - not just as a motto, but as a way of life.
 
@@ -106,31 +107,31 @@ That is what it takes to be a Rotaractor. Not perfection. Not experience. Just t
 No article about Rotaract would be complete without the voices of the people who live it. Here's what some members and leaders across the district have to say.
 
 > *"Identifying the social needs, stepping up to do the work - it pushes you to be a better self for the society."*
->
+
 > — **Nrupesh**, Working President, Rotaract Club of Hyderabad The Legends
 
 > *"To be a Rotaractor, you should be open to trying out all types of leadership opportunities. Eventually, you will become the best version of yourself."*
->
+
 > — **AVNS Pavan**, GRR Group 1
 
 > *"As a Rotaractor, it represents a personal growth and leadership journey. I have invested time in reflection, unlearning old habits, acquiring new skills, and strategic planning. The principles of integrity, strong fellowship, and community service - this integration helps me stay with the organisation."*
->
+
 > — **Vamshi Vinod Kumar**, DRR
 
 > *"Responsibility at another level - you're the face of the club. Pressure and pride together. Decision-making every day - handling people, conflicts, planning. And deep satisfaction when you see your team execute something impactful. It's heavy on responsibility, but unmatched in growth and pride."*
->
+
 > — **Nikhil**, Immediate Past President, Rotaract Club of Hyderabad The Legends
 
 > *"A true Rotaractor is driven by the passion to connect with people, create smiles, and experience life beyond boundaries."*
->
+
 > — **Shailesh P**, District Advisor
 
 > *"Rotaract, to me, is where service meets leadership and friendships become family."*
->
+
 > — **Venkat P**, District Secretary - Events & Avenues
 
 > *"Rotaract gives you a broader chance to identify problems and serve society - and the courage to face public issues head-on."*
->
+
 > — **Rajesh**, President-Elect, Rotaract Club of Hyderabad The Legends
 
 *Service Above Self.*
