@@ -29,7 +29,6 @@ export const blogPosts: BlogPost[] = [
 
 *By Ajay Ramineni, Director of Design & Editing - The Legends, Hyderabad*
 
----
 
 There's a question I get asked a lot, usually by my friends, sometimes at college, occasionally from a curious friend scrolling through my Instagram stories and spotting me in a Rotaract t-shirt at some project or another: *"What exactly is Rotaract?"*
 
@@ -39,7 +38,6 @@ Rotaract isn't something you can fully explain. It's something you have to *beco
 
 And becoming a Rotaractor, a real one, takes more than most people expect.
 
----
 
 ## It Takes Showing Up When It's Inconvenient
 
@@ -75,7 +73,6 @@ When you genuinely care, it changes how you show up. You spend that extra time f
 
 That's what makes someone leave a mark. Not just being there, but actually being invested.
 
----
 
 ## It Takes Learning to Work With People You Didn't Choose
 
@@ -89,7 +86,6 @@ This, more than almost anything else, prepares you for real life. The profession
 
 The friendships that come out of this, by the way, are some of the most genuine you'll find. There's something about building things together, especially hard things, that bonds people in ways that casual socializing never quite does. I personally found some great relationships that I would always be grateful for.
 
----
 
 ## It Takes Knowing Why You're Here
 
@@ -105,55 +101,47 @@ That is what it takes to be a Rotaractor. Not perfection. Not experience. Just t
 
 *Service Above Self* - not just as a motto, but as a way of life.
 
----
 
 ## In Their Own Words
 
 No article about Rotaract would be complete without the voices of the people who live it. Here's what some members and leaders across the district have to say.
 
----
 
 > *"Identifying the social needs, stepping up to do the work - it pushes you to be a better self for the society."*
->
+
 > **Nrupesh**, Working President, Rotaract Club of Hyderabad The Legends
 
----
+
 
 > *"To be a Rotaractor, you should be open to trying out all types of leadership opportunities. Eventually, you will become the best version of yourself."*
->
+
 > **AVNS Pavan**, GRR Group 1
 
----
 
 > *"As a Rotaractor, it represents a personal growth and leadership journey. I have invested time in reflection, unlearning old habits, acquiring new skills, and strategic planning. The principles of integrity, strong fellowship, and community service - this integration helps me stay with the organisation."*
->
+
 > **Vamshi Vinod Kumar**, DRR
 
----
 
 > *"Responsibility at another level - you're the face of the club. Pressure and pride together. Decision-making every day - handling people, conflicts, planning. And deep satisfaction when you see your team execute something impactful. It's heavy on responsibility, but unmatched in growth and pride."*
->
+
 > **Nikhil**, Immediate Past President, Rotaract Club of Hyderabad The Legends
 
----
 
 > *"A true Rotaractor is driven by the passion to connect with people, create smiles, and experience life beyond boundaries."*
->
+
 > **Shailesh P**, District Advisor
 
----
 
 > *"Rotaract, to me, is where service meets leadership and friendships become family."*
->
+
 > **Venkat P**, District Secretary - Events & Avenues
 
----
 
 > *"Rotaract gives you a broader chance to identify problems and serve society - and the courage to face public issues head-on."*
->
+
 > **Rajesh**, President-Elect, Rotaract Club of Hyderabad The Legends
 
----
 
 *Service Above Self.*
     `,
