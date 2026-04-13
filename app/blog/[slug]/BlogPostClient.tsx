@@ -82,10 +82,12 @@ function renderMarkdown(content: string): ReactNode[] {
         </pre>
       );
     } else if (line.startsWith("> ")) {
+      const content = line.slice(2);
+      const isAttribution = content.startsWith("— ");
       elements.push(
         <blockquote key={i} className="border-l-2 border-[#FD7F2C] pl-5 my-6">
-          <p className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem] text-justify">
-            {parseInline(line.slice(2))}
+          <p className={`text-[#a1a1aa] leading-relaxed text-[0.95rem] ${isAttribution ? 'text-right' : 'italic text-justify'}`}>
+            {parseInline(content)}
           </p>
         </blockquote>
       );
