@@ -11,13 +11,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `https://ajayramineni.com/blog/${post.slug}`;
   return {
     title: post.title,
-    description: post.excerpt,
-    alternates: { canonical: url },
+    description: post.content.slice(0, 160).replace(/[#\n]/g, " ").trim(),
     openGraph: {
-      title: `${post.title} | Ajay Ramineni`,
-      description: post.excerpt,
-      url,
-      images: [{ url: "/images/Aj.jpg", width: 1200, height: 630, alt: "Ajay Ramineni" }],
+      title: post.title,
+      description: post.content.slice(0, 160).replace(/[#\n]/g, " ").trim(),
+      images: post.image ? [{ url: post.image }] : [],
     },
     twitter: {
       card: "summary_large_image",
