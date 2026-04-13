@@ -49,7 +49,6 @@ That's what matters most. Not talent or experience. Just showing up again and ag
 
 Rotaract will not chase you. But it will reward you, enormously, every time you choose it.
 
----
 
 ## It Takes Being Comfortable Not Knowing What You're Doing
 
@@ -61,7 +60,6 @@ Rotaract is not about being ready. It's about learning while doing. You make mis
 
 If you wait until you feel ready, you'll never start. The ones who grow are the ones who say yes first and figure it out later.
 
----
 
 ## It Takes Caring - Actually Caring
 
@@ -106,167 +104,35 @@ That is what it takes to be a Rotaractor. Not perfection. Not experience. Just t
 
 No article about Rotaract would be complete without the voices of the people who live it. Here's what some members and leaders across the district have to say.
 
+"Identifying the social needs, stepping up to do the work - it pushes you to be a better self for the society."
 
-> *"Identifying the social needs, stepping up to do the work - it pushes you to be a better self for the society."*
+**Nrupesh, Working President, Rotaract Club of Hyderabad The Legends**
 
-> **Nrupesh**, Working President, Rotaract Club of Hyderabad The Legends
+"To be a Rotaractor, you should be open to trying out all types of leadership opportunities. Eventually, you will become the best version of yourself."
 
+**AVNS Pavan, GRR Group 1**
 
+"As a Rotaractor, it represents a personal growth and leadership journey. I have invested time in reflection, unlearning old habits, acquiring new skills, and strategic planning. The principles of integrity, strong fellowship, and community service - this integration helps me stay with the organisation."
 
-> *"To be a Rotaractor, you should be open to trying out all types of leadership opportunities. Eventually, you will become the best version of yourself."*
+**Vamshi Vinod Kumar, DRR**
 
-> **AVNS Pavan**, GRR Group 1
+"Responsibility at another level - you're the face of the club. Pressure and pride together. Decision-making every day - handling people, conflicts, planning. And deep satisfaction when you see your team execute something impactful. It's heavy on responsibility, but unmatched in growth and pride."
 
+**Nikhil, Immediate Past President, Rotaract Club of Hyderabad The Legends**
 
-> *"As a Rotaractor, it represents a personal growth and leadership journey. I have invested time in reflection, unlearning old habits, acquiring new skills, and strategic planning. The principles of integrity, strong fellowship, and community service - this integration helps me stay with the organisation."*
+"A true Rotaractor is driven by the passion to connect with people, create smiles, and experience life beyond boundaries."
 
-> **Vamshi Vinod Kumar**, DRR
+**Shailesh P, District Advisor**
 
+"Rotaract, to me, is where service meets leadership and friendships become family."
 
-> *"Responsibility at another level - you're the face of the club. Pressure and pride together. Decision-making every day - handling people, conflicts, planning. And deep satisfaction when you see your team execute something impactful. It's heavy on responsibility, but unmatched in growth and pride."*
+**Venkat P, District Secretary - Events & Avenues**
 
-> **Nikhil**, Immediate Past President, Rotaract Club of Hyderabad The Legends
+"Rotaract gives you a broader chance to identify problems and serve society - and the courage to face public issues head-on."
 
-
-> *"A true Rotaractor is driven by the passion to connect with people, create smiles, and experience life beyond boundaries."*
-
-> **Shailesh P**, District Advisor
-
-
-> *"Rotaract, to me, is where service meets leadership and friendships become family."*
-
-> **Venkat P**, District Secretary - Events & Avenues
-
-
-> *"Rotaract gives you a broader chance to identify problems and serve society - and the courage to face public issues head-on."*
-
-> **Rajesh**, President-Elect, Rotaract Club of Hyderabad The Legends
-
+**Rajesh, President-Elect, Rotaract Club of Hyderabad The Legends**
 
 *Service Above Self.*
-    `,
-  },
-
-  {
-    slug: "power-bi-kpi-dashboard",
-    title: "Designing KPI Dashboards That Actually Get Used",
-    excerpt:
-      "The gap between a technically correct dashboard and one that drives decisions. Lessons from the Nike BI project on layout, storytelling, and stakeholder buy-in.",
-    date: "February 2025",
-    readTime: "5 min",
-    tag: "Business Intelligence",
-    category: "article",
-    featured: true,
-    content: `
-# Designing KPI Dashboards That Actually Get Used
-
-The Nike BI project was my first time working with a dataset at real scale, 99K+ records across three interconnected tables. Here is what I learned about dashboard design that actually changes decisions.
-
-## The Problem With Most Dashboards
-
-Most dashboards are built for the analyst who made them. They have every metric the analyst found interesting, arranged in a grid that makes technical sense. Then nobody uses them.
-
-## Start With the Decision, Not the Data
-
-Before I opened Power BI, I asked: what decision is this dashboard supposed to support? For Nike, it was regional resource allocation. That single question eliminated 60% of the metrics I initially wanted to include.
-
-## The Layout Principles I Use
-
-**Top-left is the most valuable real estate**
-Put your primary KPI there. Everything else supports it.
-
-**Use visual hierarchy**
-Large numbers for KPIs, small charts for trends, tables for drill-down.
-
-**Color is communication**
-Use one accent color for the metric you want users to act on.
-
-## What Made the Nike Dashboard Work
-
-We surfaced regional performance gaps that were not visible in the raw data. By normalizing sales by store count rather than absolute revenue, it became clear which regions were over-indexed on large format stores.
-    `,
-  },
-
-  {
-    slug: "data-strategy-for-startups",
-    title: "Why Most Startups Get Their Data Strategy Wrong",
-    excerpt:
-      "Common mistakes I see in early-stage companies and how to build a scalable data foundation from day one to Series A.",
-    date: "January 2025",
-    readTime: "7 min",
-    tag: "Strategy",
-    category: "article",
-    featured: false,
-    content: `
-# Why Most Startups Get Their Data Strategy Wrong
-
-Coming from a business development background before pivoting into data analytics, I have seen data strategy from both sides.
-
-## Mistake 1: Buying Tools Before Defining Questions
-
-The most common mistake is tool-first thinking. A startup buys a BI tool, Snowflake, and a CDP before they have defined the three questions they are trying to answer this quarter.
-
-## Mistake 2: Storing Everything, Analyzing Nothing
-
-Storage is cheap. But a data warehouse full of unstructured event logs with no documentation is worse than useless.
-
-## Mistake 3: Not Assigning Data Ownership
-
-Data quality degrades without owners. Every key metric should have a single person responsible for its definition and accuracy.
-
-## What Good Early-Stage Data Strategy Looks Like
-
-- Three to five key metrics that directly map to business goals
-- One source of truth for each metric, clearly documented
-- A lightweight reporting cadence
-- Clean event tracking on your core user flows from day one
-    `,
-  },
-
-  {
-    slug: "tfidf-recommendation-systems",
-    title: "TF-IDF for Recommendation Systems: A Practical Guide",
-    excerpt:
-      "How I used TF-IDF and cosine similarity to build a content-based anime recommendation engine on 12K+ titles. Code included.",
-    date: "December 2024",
-    readTime: "8 min",
-    tag: "Machine Learning",
-    category: "article",
-    featured: false,
-    content: `
-# TF-IDF for Recommendation Systems: A Practical Guide
-
-For my anime recommendation system, I chose TF-IDF plus cosine similarity over collaborative filtering deliberately.
-
-## Why Content-Based Over Collaborative?
-
-Collaborative filtering requires user interaction data. My dataset had rich item metadata but limited user behavior data. TF-IDF is ideal when your items have descriptive text.
-
-## The TF-IDF Approach
-
-TF-IDF converts text into a numerical matrix where each entry represents how distinctive a word is for a given document. For recommendations, each document is an item profile.
-
-## Implementation
-
-\`\`\`python
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-
-df['profile'] = df['genre'] + ' ' + df['type'] + ' ' + df['studio']
-
-tfidf = TfidfVectorizer(stop_words='english', max_features=5000)
-tfidf_matrix = tfidf.fit_transform(df['profile'])
-cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
-
-def recommend(title, n=10):
-    idx = df[df['name'] == title].index[0]
-    sim_scores = sorted(enumerate(cosine_sim[idx]), key=lambda x: x[1], reverse=True)[1:n+1]
-    return df.iloc[[i[0] for i in sim_scores]][['name', 'genre', 'rating']]
-\`\`\`
-
-## Results
-
-On the 12K+ title dataset, recommendations were highly relevant within genre clusters. Adding popularity weighting significantly improved perceived quality.
     `,
   },
 
