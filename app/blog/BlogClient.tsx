@@ -74,7 +74,7 @@ export default function BlogClient() {
             <div className="flex-1 h-px bg-[#1e1e1e]" />
           </div>
           <p className="text-[#52525b] text-xs font-mono mb-6 leading-relaxed">
-            Writeups on machine learning, data strategy, business intelligence, and analytics.
+            Thoughts, experiences, and ideas I feel like sharing.
           </p>
           <div>
             {articles.map((post, i) => (
