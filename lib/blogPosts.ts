@@ -15,48 +15,147 @@ export const blogPosts: BlogPost[] = [
   // ── ARTICLES ──────────────────────────────────────────────────────────────
 
   {
-    slug: "ml-pipeline-best-practices",
-    title: "Building Production-Ready ML Pipelines on Azure",
+    slug: "what-it-takes-to-be-a-rotaractor",
+    title: "What It Takes to Be a Rotaractor",
     excerpt:
-      "From raw data to deployed model. A hands-on guide to Azure ML Studio pipelines with boosted decision trees, feature stores, and monitoring.",
-    date: "March 2025",
-    readTime: "6 min",
-    tag: "Machine Learning",
+      "After almost a year in the club, here is what I have learned about showing up, growing, and actually caring about something beyond yourself.",
+    date: "April 2026",
+    readTime: "8 min",
+    tag: "Leadership",
     category: "article",
     featured: true,
     content: `
-# Building Production-Ready ML Pipelines on Azure
+# What It Takes to Be a Rotaractor
 
-After completing my Azure ML income prediction project, I compiled the key lessons I learned about building ML pipelines that actually hold up in production.
+*By Ajay Ramineni, Director of Design & Editing - The Legends, Hyderabad*
 
-## Why Most ML Projects Fail in Production
+---
 
-The gap between a Jupyter notebook and a deployed, monitored model is enormous. Most data science tutorials stop at model training accuracy. Production ML is a different beast.
+There's a question I get asked a lot, usually by my friends, sometimes at college, occasionally from a curious friend scrolling through my Instagram stories and spotting me in a Rotaract t-shirt at some project or another: *"What exactly is Rotaract?"*
 
-## The Pipeline Architecture
+I used to stumble over the answer. I'd say something about service and leadership, maybe mention that it's connected to Rotary International, and watch their eyes glaze over. But after almost a year of being in this club, designing flyers at midnight, editing videos, sitting with people planning meetings that run way over time, and then somehow still showing up the next week, I think I finally know what to say.
 
-A robust Azure ML pipeline has five core stages:
+Rotaract isn't something you can fully explain. It's something you have to *become*.
 
-**1. Data Ingestion and Validation**
-Use Azure Data Factory or SDK v2 datasets with explicit schema validation. Fail fast if the data does not match expectations.
+And becoming a Rotaractor, a real one, takes more than most people expect.
 
-**2. Feature Engineering**
-Build transformations as reusable pipeline components, not one-off scripts. This is what lets you reproduce results and update features cleanly.
+---
 
-**3. Model Training**
-Use Azure ML experiments for automatic tracking. Log hyperparameters, metrics, and artifacts on every run, not just the winning one.
+## It Takes Showing Up When It's Inconvenient
 
-**4. Evaluation and Promotion**
-Compare against a baseline. Never promote a model without a side-by-side comparison on a held-out test set.
+Let's be real. No one joins Rotaract because they have free time. We're all busy with classes, internships, work, and everything else going on.
 
-**5. Deployment and Monitoring**
-Use managed online endpoints for real-time inference. Set up data drift monitors from day one.
+There's never a perfect time to show up. But we still do.
 
-## Key Lessons
+That's what matters most. Not talent or experience. Just showing up again and again. The people who grow the most here are not the smartest or most skilled. They're the ones who stay consistent, even when they're tired or stressed.
 
-- Version everything: data, code, and models. Azure ML makes this easy with registered datasets and model registry.
-- Build for retraining: pipelines should be triggerable, not just run-once scripts.
-- Monitor distribution shift: the world changes; your model needs to know when it does.
+Rotaract will not chase you. But it will reward you, enormously, every time you choose it.
+
+---
+
+## It Takes Being Comfortable Not Knowing What You're Doing
+
+I remember the first time my club president handed me the role of Director of Design & Editing, I didn't know what to say. I had some experience with design tools, sure, but I had never made anything for an audience like this, something that would go out to members, partners, the community. I was terrified of getting it wrong.
+
+But that's the truth here. Everyone is figuring things out as they go. Even the people who look confident.
+
+Rotaract is not about being ready. It's about learning while doing. You make mistakes, you improve, and you keep going.
+
+If you wait until you feel ready, you'll never start. The ones who grow are the ones who say yes first and figure it out later.
+
+---
+
+## It Takes Caring - Actually Caring
+
+This might sound obvious, but it isn't. There's a version of club membership that's purely performative, attending just enough to put it on a resume, volunteering just enough to get a certificate, contributing just enough to not be noticed for the wrong reasons. You can technically be a Rotaractor without ever really *being* a Rotaractor.
+
+The real difference is care. Care about the work you're doing. Care about the people you're working with. Care about the impact, even if it feels small.
+
+When you genuinely care, it changes how you show up. You spend that extra time fixing something because you want it to be right. You speak up because you believe your idea matters. You check in on your team because you know everyone is dealing with something.
+
+That's what makes someone leave a mark. Not just being there, but actually being invested.
+
+---
+
+## It Takes Learning to Work With People You Didn't Choose
+
+One of the most underrated things Rotaract teaches you is how to collaborate with people who are nothing like you.
+
+Your club is not a friend group you carefully curated. It's a mix of personalities, working styles, communication habits, and priorities that you did not select and cannot swap out. Someone will always respond to group chats too slowly. Someone will always be overly enthusiastic in meetings. Someone will have a completely different vision for the same project. Someone who never shows up but still shows up when urgency calls.
+
+And you will have to make it work anyway.
+
+This, more than almost anything else, prepares you for real life. The professional world is full of teams you didn't choose, colleagues you didn't pick, and collaborations that require patience you didn't know you had. Rotaract gives you a safe space to develop that muscle, to practice disagreeing graciously, compromising without resentment, and finding common ground with people who see the world differently.
+
+The friendships that come out of this, by the way, are some of the most genuine you'll find. There's something about building things together, especially hard things, that bonds people in ways that casual socializing never quite does. I personally found some great relationships that I would always be grateful for.
+
+---
+
+## It Takes Knowing Why You're Here
+
+Ultimately, what it takes to be a Rotaractor comes down to one thing: knowing your *why*.
+
+Not the polished answer you rehearse at a membership drive. The real one, the one that gets you out of bed for a 7 AM project setup, keeps you up editing something at midnight because you want it to be just right, and makes you feel, at the end of a long and chaotic event, that every minute of it was worth it.
+
+Rotaract is not a line on a resume. It is not a social club or an obligation you check off. It is a choice made repeatedly, in big moments and small ones, to be someone who shows up, who gives, who grows, who cares. It is a mirror that reflects back who you are, and a forge that shapes who you are becoming.
+
+You will leave this organization different from how you entered it. More patient, more resilient, more human. You will carry with you memories of late nights and early mornings, of projects that didn't go to plan and ones that exceeded every expectation. You will carry the faces of people who believed in you before you believed in yourself.
+
+That is what it takes to be a Rotaractor. Not perfection. Not experience. Just the willingness to begin, and the commitment to keep going.
+
+*Service Above Self* - not just as a motto, but as a way of life.
+
+---
+
+## In Their Own Words
+
+No article about Rotaract would be complete without the voices of the people who live it. Here's what some members and leaders across the district have to say.
+
+---
+
+> *"Identifying the social needs, stepping up to do the work - it pushes you to be a better self for the society."*
+>
+> **Nrupesh**, Working President, Rotaract Club of Hyderabad The Legends
+
+---
+
+> *"To be a Rotaractor, you should be open to trying out all types of leadership opportunities. Eventually, you will become the best version of yourself."*
+>
+> **AVNS Pavan**, GRR Group 1
+
+---
+
+> *"As a Rotaractor, it represents a personal growth and leadership journey. I have invested time in reflection, unlearning old habits, acquiring new skills, and strategic planning. The principles of integrity, strong fellowship, and community service - this integration helps me stay with the organisation."*
+>
+> **Vamshi Vinod Kumar**, DRR
+
+---
+
+> *"Responsibility at another level - you're the face of the club. Pressure and pride together. Decision-making every day - handling people, conflicts, planning. And deep satisfaction when you see your team execute something impactful. It's heavy on responsibility, but unmatched in growth and pride."*
+>
+> **Nikhil**, Immediate Past President, Rotaract Club of Hyderabad The Legends
+
+---
+
+> *"A true Rotaractor is driven by the passion to connect with people, create smiles, and experience life beyond boundaries."*
+>
+> **Shailesh P**, District Advisor
+
+---
+
+> *"Rotaract, to me, is where service meets leadership and friendships become family."*
+>
+> **Venkat P**, District Secretary - Events & Avenues
+
+---
+
+> *"Rotaract gives you a broader chance to identify problems and serve society - and the courage to face public issues head-on."*
+>
+> **Rajesh**, President-Elect, Rotaract Club of Hyderabad The Legends
+
+---
+
+*Service Above Self.*
     `,
   },
 
