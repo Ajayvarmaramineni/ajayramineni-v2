@@ -84,13 +84,24 @@ function renderMarkdown(content: string): ReactNode[] {
     } else if (line.startsWith("> ")) {
       const content = line.slice(2);
       const isAttribution = content.startsWith("— ");
-      elements.push(
-        <blockquote key={i} className="border-l-2 border-[#FD7F2C] pl-5 my-6">
-          <p className={`text-[#a1a1aa] leading-relaxed text-[0.95rem] ${isAttribution ? 'text-right' : 'italic text-justify'}`}>
+
+      if (content.trim() === "") {
+        // Skip empty blockquote continuation lines (stray `>`)
+      } else if (isAttribution) {
+        elements.push(
+          <p key={i} className="text-[#a1a1aa] leading-relaxed text-[0.95rem] text-right my-4">
             {parseInline(content)}
           </p>
-        </blockquote>
-      );
+        );
+      } else {
+        elements.push(
+          <blockquote key={i} className="border-l-2 border-[#FD7F2C] pl-5 my-6">
+            <p className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem] text-justify">
+              {parseInline(content)}
+            </p>
+          </blockquote>
+        );
+      }
     } else if (line.startsWith("*- With Love") || line.startsWith("*- with love")) {
       elements.push(
         <p key={i} className="text-[#FD7F2C] font-mono text-sm mt-10 italic">
