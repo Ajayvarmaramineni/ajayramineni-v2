@@ -84,7 +84,7 @@ function renderMarkdown(content: string): ReactNode[] {
     } else if (line.startsWith("> ")) {
       elements.push(
         <blockquote key={i} className="border-l-2 border-[#FD7F2C] pl-5 my-6">
-          <p className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem]">
+          <p className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem] text-justify">
             {parseInline(line.slice(2))}
           </p>
         </blockquote>
@@ -120,7 +120,7 @@ function renderMarkdown(content: string): ReactNode[] {
       }
     } else if (line.trim() !== "") {
       elements.push(
-        <p key={i} className="text-[#a1a1aa] leading-relaxed my-4">
+        <p key={i} className="text-[#a1a1aa] leading-relaxed my-4 text-justify">
           {parseInline(line)}
         </p>
       );
