@@ -29,6 +29,7 @@ export const blogPosts: BlogPost[] = [
 
 *By Ajay Ramineni, Director of Design & Editing - The Legends, Hyderabad*
 
+![Rotaract Image](/images/rotaract.jpg)
 
 There's a question I get asked a lot, usually by my friends, sometimes at college, occasionally from a curious friend scrolling through my Instagram stories and spotting me in a Rotaract t-shirt at some project or another: *"What exactly is Rotaract?"*
 
