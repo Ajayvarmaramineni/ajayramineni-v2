@@ -143,6 +143,24 @@ export const projects: Project[] = [
     github: null,
     live: null,
   },
+  {
+    id: "08",
+    title: "The Compliance Trap",
+    category: "Research",
+    gradient: "from-[#1B2A4A] via-[#AC2B37] to-[#0D1525]",
+    accentColor: "#AC2B37",
+    stack: ["Python", "statsmodels", "OLS Regression", "Pandas", "Chart.js", "HTML/CSS/JS"],
+    description:
+      "WPI BUS596 capstone. Cross-sectional OLS regression across 11 merged CMS datasets and 2,833 U.S. acute care hospitals. Identified three systemic failure modes in federal penalty programs: infection metric blind spots, readmission displacement, and multi-program convergence. Includes an interactive hospital explorer.",
+    outcome: "2,833 hospitals · 3 policy findings · p < 0.001",
+    highlights: [
+      "Merged 11 CMS public-use files across 2,833 U.S. acute care hospitals",
+      "Ran 9 OLS models with HC3 robust SE — all key findings at p < 0.001",
+      "Built interactive research site with live hospital explorer",
+    ],
+    github: "https://github.com/Ajayvarmaramineni/CMS-Compliance-Trap",
+    live: "https://ajayvarmaramineni.github.io/CMS-Compliance-Trap/",
+  },
 ];
 
 /** First 4 projects used on the home page FeaturedWork section */

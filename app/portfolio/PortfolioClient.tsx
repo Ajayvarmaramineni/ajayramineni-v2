@@ -6,7 +6,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 import WorkGridBg from "@/components/ui/WorkGridBg";
 import { projects } from "@/lib/projects";
 
-const categories = ["All", "Machine Learning", "Business Intelligence", "Web", "Strategy"];
+const categories = ["All", "Machine Learning", "Business Intelligence", "Web", "Strategy", "Research"];
 
 export default function PortfolioClient() {
   const [active, setActive] = useState("All");
