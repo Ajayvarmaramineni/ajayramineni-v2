@@ -16,9 +16,36 @@ export type Project = {
   live: string | null;
 };
 
+export type Experience = {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  highlights: string[];
+  outcome: string;
+};
+
 export const projects: Project[] = [
   {
     id: "01",
+    title: "The Compliance Trap",
+    category: "Research",
+    gradient: "from-[#1B2A4A] via-[#AC2B37] to-[#0D1525]",
+    accentColor: "#AC2B37",
+    stack: ["Python", "statsmodels", "OLS Regression", "Pandas", "Chart.js", "HTML/CSS/JS"],
+    description:
+      "WPI BUS596 capstone. Cross-sectional OLS regression across 11 merged CMS datasets and 2,833 U.S. acute care hospitals. Identified three systemic failure modes in federal penalty programs: infection metric blind spots, readmission displacement, and multi-program convergence. Includes an interactive hospital explorer.",
+    outcome: "2,833 hospitals · 3 policy findings · p < 0.001",
+    highlights: [
+      "Merged 11 CMS public-use files across 2,833 U.S. acute care hospitals",
+      "Ran 9 OLS models with HC3 robust SE — all key findings at p < 0.001",
+      "Built interactive research site with live hospital explorer",
+    ],
+    github: "https://github.com/Ajayvarmaramineni/CMS-Compliance-Trap",
+    live: "https://ajayvarmaramineni.github.io/CMS-Compliance-Trap/",
+  },
+  {
+    id: "02",
     title: "Azure ML Income Prediction",
     category: "Machine Learning",
     gradient: "from-[#1e1b4b] via-[#312e81] to-[#0f172a]",
@@ -36,7 +63,25 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "02",
+    id: "03",
+    title: "EchoForge AI",
+    category: "Machine Learning",
+    gradient: "from-[#0a0a1a] via-[#1a0a2e] to-[#0d0d1f]",
+    accentColor: "#a855f7",
+    stack: ["Python", "FastAPI", "Coqui XTTS v2", "PyTorch", "REST API", "Git LFS"],
+    description:
+      "Self-hosted voice synthesis backend using Coqui XTTS v2. Clones and consistently reproduces an assistant-style voice from a single short WAV reference clip — no training required. Production-ready REST API with automatic GPU/CPU detection and cached conditioning latents for low-latency inference.",
+    outcome: "Zero-training voice cloning · Production REST API",
+    highlights: [
+      "Clones a consistent voice identity from a single WAV clip — no training needed",
+      "Sentence-aware synthesis with cached GPU/CPU latents for low-latency responses",
+      "Production-ready FastAPI backend with /speak, /health, and /info endpoints",
+    ],
+    github: "https://github.com/Ajayvarmaramineni/echoforge-ai",
+    live: null,
+  },
+  {
+    id: "04",
     title: "Nike Business Intelligence Dashboard",
     category: "Business Intelligence",
     gradient: "from-[#1c0a00] via-[#431407] to-[#0f172a]",
@@ -51,42 +96,6 @@ export const projects: Project[] = [
       "Proposed unified data warehouse strategy for cross-team alignment",
     ],
     github: null,
-    live: null,
-  },
-  {
-    id: "03",
-    title: "Anime Recommendation System",
-    category: "Machine Learning",
-    gradient: "from-[#0d1a2e] via-[#0f3460] to-[#0a0a1a]",
-    accentColor: "#22d3ee",
-    stack: ["Python", "Pandas", "TF-IDF", "Cosine Similarity", "Scikit-Learn"],
-    description:
-      "Content-based recommendation engine built on 12,000+ anime titles. Uses TF-IDF vectorization on genre, type, and studio metadata, with cosine similarity for personalized recommendations. Includes popularity weighting and cold-start handling.",
-    outcome: "12k+ titles · Real-time recommendations",
-    highlights: [
-      "Vectorised metadata across 12,000+ titles with TF-IDF",
-      "Personalises suggestions by genre, type, and rating signals",
-      "Includes popularity weighting for cold-start handling",
-    ],
-    github: null,
-    live: null,
-  },
-  {
-    id: "04",
-    title: "Titanic Kaggle Competition",
-    category: "Machine Learning",
-    gradient: "from-[#0f1f1a] via-[#064e3b] to-[#0f172a]",
-    accentColor: "#34d399",
-    stack: ["Python", "Pandas", "Scikit-Learn", "Random Forest", "XGBoost"],
-    description:
-      "Kaggle survival prediction competition. Applied feature engineering (title extraction, family size, cabin deck), ensemble methods combining Random Forest and XGBoost, and k-fold cross-validation. Final submission achieved 0.78708 accuracy (Top 35%).",
-    outcome: "0.78708 score · Top 35% globally",
-    highlights: [
-      "Feature engineering: title extraction, family size, cabin deck",
-      "Ensemble of Random Forest + XGBoost with k-fold cross-validation",
-      "Ranked Top 35% globally with 0.78708 test accuracy",
-    ],
-    github: "https://github.com/Ajayvarmaramineni/titanic-kaggle",
     live: null,
   },
   {
@@ -109,59 +118,55 @@ export const projects: Project[] = [
   },
   {
     id: "06",
-    title: "EchoForge AI",
+    title: "Titanic Kaggle Competition",
     category: "Machine Learning",
-    gradient: "from-[#0a0a1a] via-[#1a0a2e] to-[#0d0d1f]",
-    accentColor: "#a855f7",
-    stack: ["Python", "FastAPI", "Coqui XTTS v2", "PyTorch", "REST API", "Git LFS"],
+    gradient: "from-[#0f1f1a] via-[#064e3b] to-[#0f172a]",
+    accentColor: "#34d399",
+    stack: ["Python", "Pandas", "Scikit-Learn", "Random Forest", "XGBoost"],
     description:
-      "Self-hosted voice synthesis backend using Coqui XTTS v2. Clones and consistently reproduces an assistant-style voice from a single short WAV reference clip — no training required. Production-ready REST API with automatic GPU/CPU detection and cached conditioning latents for low-latency inference.",
-    outcome: "Zero-training voice cloning · Production REST API",
+      "Kaggle survival prediction competition. Applied feature engineering (title extraction, family size, cabin deck), ensemble methods combining Random Forest and XGBoost, and k-fold cross-validation. Final submission achieved 0.78708 accuracy (Top 35%).",
+    outcome: "0.78708 score · Top 35% globally",
     highlights: [
-      "Clones a consistent voice identity from a single WAV clip — no training needed",
-      "Sentence-aware synthesis with cached GPU/CPU latents for low-latency responses",
-      "Production-ready FastAPI backend with /speak, /health, and /info endpoints",
+      "Feature engineering: title extraction, family size, cabin deck",
+      "Ensemble of Random Forest + XGBoost with k-fold cross-validation",
+      "Ranked Top 35% globally with 0.78708 test accuracy",
     ],
-    github: "https://github.com/Ajayvarmaramineni/echoforge-ai",
+    github: "https://github.com/Ajayvarmaramineni/titanic-kaggle",
     live: null,
   },
   {
     id: "07",
-    title: "Business Dev at Visatree",
-    category: "Strategy",
-    gradient: "from-[#1a0a2e] via-[#2d1b69] to-[#0f172a]",
-    accentColor: "#a78bfa",
-    stack: ["CRM", "Sales Strategy", "Team Leadership", "Analytics"],
+    title: "Anime Recommendation System",
+    category: "Machine Learning",
+    gradient: "from-[#0d1a2e] via-[#0f3460] to-[#0a0a1a]",
+    accentColor: "#22d3ee",
+    stack: ["Python", "Pandas", "TF-IDF", "Cosine Similarity", "Scikit-Learn"],
     description:
-      "Led a team of 8 business development executives. Built and managed a 200+ lead pipeline, achieving 75% conversion rate through data-driven prioritization and personalized outreach strategies. Secured 30+ institutional partnerships across India.",
-    outcome: "75% conversion · 30+ partnerships",
+      "Content-based recommendation engine built on 12,000+ anime titles. Uses TF-IDF vectorization on genre, type, and studio metadata, with cosine similarity for personalized recommendations. Includes popularity weighting and cold-start handling.",
+    outcome: "12k+ titles · Real-time recommendations",
     highlights: [
-      "Led a team of 8 BDEs and managed 200+ lead pipeline",
-      "Achieved 75% conversion through data-driven outreach",
-      "Secured 30+ institutional partnerships across India",
+      "Vectorised metadata across 12,000+ titles with TF-IDF",
+      "Personalises suggestions by genre, type, and rating signals",
+      "Includes popularity weighting for cold-start handling",
     ],
     github: null,
     live: null,
-  },
-  {
-    id: "08",
-    title: "The Compliance Trap",
-    category: "Research",
-    gradient: "from-[#1B2A4A] via-[#AC2B37] to-[#0D1525]",
-    accentColor: "#AC2B37",
-    stack: ["Python", "statsmodels", "OLS Regression", "Pandas", "Chart.js", "HTML/CSS/JS"],
-    description:
-      "WPI BUS596 capstone. Cross-sectional OLS regression across 11 merged CMS datasets and 2,833 U.S. acute care hospitals. Identified three systemic failure modes in federal penalty programs: infection metric blind spots, readmission displacement, and multi-program convergence. Includes an interactive hospital explorer.",
-    outcome: "2,833 hospitals · 3 policy findings · p < 0.001",
-    highlights: [
-      "Merged 11 CMS public-use files across 2,833 U.S. acute care hospitals",
-      "Ran 9 OLS models with HC3 robust SE — all key findings at p < 0.001",
-      "Built interactive research site with live hospital explorer",
-    ],
-    github: "https://github.com/Ajayvarmaramineni/CMS-Compliance-Trap",
-    live: "https://ajayvarmaramineni.github.io/CMS-Compliance-Trap/",
   },
 ];
 
 /** First 4 projects used on the home page FeaturedWork section */
 export const featuredProjects = projects.slice(0, 4);
+
+export const experience: Experience = {
+  title: "Director of Business Development",
+  company: "Visatree",
+  period: "2021 – 2024",
+  description:
+    "Led a team of 8 business development executives. Built and managed a 200+ lead pipeline, achieving 75% conversion rate through data-driven prioritization and personalized outreach strategies. Secured 30+ institutional partnerships across India.",
+  highlights: [
+    "Led a team of 8 BDEs and managed 200+ lead pipeline",
+    "Achieved 75% conversion through data-driven outreach",
+    "Secured 30+ institutional partnerships across India",
+  ],
+  outcome: "75% conversion · 30+ partnerships",
+};

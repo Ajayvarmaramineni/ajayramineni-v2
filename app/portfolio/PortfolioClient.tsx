@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 import WorkGridBg from "@/components/ui/WorkGridBg";
-import { projects } from "@/lib/projects";
+import { projects, experience } from "@/lib/projects";
 
 const categories = ["All", "Machine Learning", "Business Intelligence", "Web", "Strategy", "Research"];
 
@@ -150,6 +150,42 @@ export default function PortfolioClient() {
             ))}
           </div>
         </AnimatePresence>
+
+        {/* Experience Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="mt-20"
+        >
+          <p className="section-label mb-6">Work Experience</p>
+          <div className="card-noir p-8">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
+              <div>
+                <h3 className="text-xl font-semibold text-[#f8f8f8] mb-1">{experience.title}</h3>
+                <p className="font-mono text-sm text-[#6366f1]">{experience.company}</p>
+              </div>
+              <span className="font-mono text-xs text-[#52525b] border border-[#1e1e1e] rounded px-3 py-1.5 shrink-0">
+                {experience.period}
+              </span>
+            </div>
+            <p className="text-[#71717a] text-sm leading-relaxed mb-6">{experience.description}</p>
+            <ul className="space-y-2 mb-6">
+              {experience.highlights.map((h, i) => (
+                <li key={i} className="text-sm text-[#71717a] flex items-start gap-2">
+                  <span className="text-emerald-500 mt-0.5 shrink-0">▸</span>
+                  {h}
+                </li>
+              ))}
+            </ul>
+            <div className="pt-4 border-t border-[#1a1a1a]">
+              <p className="text-xs font-mono text-[#52525b] flex items-center gap-1">
+                <span className="text-emerald-500">▸</span> {experience.outcome}
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </div>
   );
