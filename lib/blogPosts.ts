@@ -288,6 +288,52 @@ I am still figuring it out. Some days it feels like charity; most days, it just 
   // ── DEAR STRANGER SERIES ──────────────────────────────────────────────────
 
   {
+    slug: "dear-stranger-you-are-enough",
+    title: "Dear Stranger, You Are Enough",
+    excerpt: "On not feeling chosen, on showing up fully and still falling short in someone else's eyes, and why that says nothing about your worth.",
+    date: "May 30, 2026",
+    readTime: "6 min",
+    tag: "Dear Stranger",
+    category: "dear-stranger",
+    featured: false,
+    content: `
+# Dear Stranger, You Are Enough
+
+![Dear Stranger](/images/stranger1.jpg)
+
+Dear Stranger,
+
+I know you've probably asked yourself why you keep ending up here. Back in this same feeling, this same silence, this same question that never really goes away. And honestly, I don't have a big answer for you. I just wanted to write this because I felt it too, and I think that matters.
+
+I just want to know that feeling. The feeling of being chosen. Not because someone had no one else. Not because I was convenient or familiar or just there. But chosen. Fully. On purpose. Like someone looked at me, really looked, and decided I was exactly who they wanted. Not a backup. Not a maybe. Not someone they settled for while waiting for something better.
+
+I don't know what that feels like. And if you're reading this, maybe you don't either.
+
+Every time I let someone in, there is always something else on their mind. Someone else they are still thinking about. Or they are in their own head, calculating, measuring, comparing. Comparing me to an idea of a person they built in their imagination. A person I am never going to be, because that person does not exist. And yet I am the one who falls short. I am the one who is not quite right.
+
+What hurts the most is that I never did that to them. I never walked in with a checklist. I never held their flaws against them or kept a record of every time they disappointed me. I just showed up. Again and again. I accepted them as they were, the messy parts and the hard parts and all of it. And I thought that meant something.
+
+But then they leave. And when they do, they point at everything I could not give. Everything I was not. Like all the things I did, all the times I stayed, all the ways I tried, none of it counted. Like love is supposed to be about what you lack, not what you give.
+
+And I am left standing there, going through it all in my head, wondering what I missed. Wondering what I was supposed to do differently. Wondering if there is something about me that just makes people look past me, through me, toward something else.
+
+So every morning I wake up and I ask myself the same thing. Just once, can I feel like I am enough? Not perfect. Not the best anyone has ever met. Just enough. Just worthy of someone choosing me and meaning it.
+
+If you are reading this and you feel that same thing, I want you to know that you are not alone in it. This feeling is real and it is heavy and it makes sense. You do not have to pretend it does not hurt. It does. And that is okay.
+
+I also want you to know something I am slowly starting to believe myself. The fact that people did not choose you does not mean you were not worth choosing. Sometimes people are too caught up in who they want you to be to see who you actually are. That is their loss. That is their limitation. Not yours.
+
+You are not a placeholder. You are not a consolation prize. You are not someone to be tolerated until something better comes along. And one day, someone is going to see that. Someone is going to choose you like it is the easiest decision they have ever made. Like there was never any other option.
+
+Until then, I am here. Writing this at whatever hour it is, feeling everything you are feeling, and hoping this finds you on a night when you needed to hear it.
+
+> You are enough. You always were.
+
+*- With Love, Aj✨*
+    `,
+  },
+
+  {
     slug: "dear-stranger-you-are-not-late",
     title: "Dear Stranger, You Are Not Late",
     excerpt: "On timelines that aren't real, paths that are your own, and the quiet truth that you're exactly where you need to be.",
