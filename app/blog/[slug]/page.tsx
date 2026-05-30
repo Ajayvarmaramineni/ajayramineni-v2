@@ -11,10 +11,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `https://ajayramineni.com/blog/${post.slug}`;
   return {
     title: post.title,
-    description: post.content.slice(0, 160).replace(/[#\n]/g, " ").trim(),
+    description: post.excerpt,
     openGraph: {
       title: post.title,
-      description: post.content.slice(0, 160).replace(/[#\n]/g, " ").trim(),
+      description: post.excerpt,
       images: [],
     },
     twitter: {
