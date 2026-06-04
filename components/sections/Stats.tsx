@@ -7,7 +7,7 @@ const stats = [
   { value: 4.0,  suffix: " GPA", label: "Academic Excellence",   decimal: true  },
   { value: 200,  suffix: "+",    label: "Leads Managed",          decimal: false },
   { value: 99,   suffix: "K+",   label: "Records Analyzed",       decimal: false },
-  { value: 5,    suffix: "+",    label: "Projects Delivered",      decimal: false },
+  { value: 8,    suffix: "+",    label: "Projects Built",           decimal: false },
 ];
 
 function Counter({ target, suffix, decimal }: { target: number; suffix: string; decimal: boolean }) {

@@ -7,7 +7,7 @@ import { ArrowRight, Download } from "lucide-react";
 import DataNetworkBg from "@/components/ui/DataNetworkBg";
 import { trackEvent } from "@/lib/gtag";
 
-const roles = ["Data & Business Analyst", "Business Intelligence", "Product Analyst", "Photographer"];
+const roles = ["Data & Business Analyst", "Business Intelligence", "Product Analyst", "ML Engineer"];
 
 export default function Hero() {
   return (
@@ -95,9 +95,9 @@ export default function Hero() {
                 My work spans machine learning pipelines, recommendation systems, and marketing analytics using Python, SQL, and BI tools. I focus on making data not just accurate, but actionable for real-world decisions.
               </p>
               <p className="text-[#71717a] text-[0.9rem] leading-relaxed">
-                I am also the founder of{" "}
+                I am also building{" "}
                 <span className="text-[#f4f4f5] font-medium">DataStatz</span>
-                , a platform that simplifies analysis through automated insights, AutoML, and shareable dashboards.
+                , a no-code automated analysis platform with EDA, AutoML pipelines, and shareable dashboards.
               </p>
             </motion.div>
 
