@@ -46,6 +46,24 @@ export const projects: Project[] = [
   },
   {
     id: "02",
+    title: "DataStatz",
+    category: "Web",
+    gradient: "from-[#0a1628] via-[#0f2d4a] to-[#0a0a1a]",
+    accentColor: "#3ECF8E",
+    stack: ["Next.js", "FastAPI", "Python", "Supabase", "Docker", "Vercel"],
+    description:
+      "No-code automated data analysis platform. Upload a CSV or Excel file — get instant EDA, cleaning diagnostics, ML feasibility scoring, and structured insights without writing a single line of code. 6-service FastAPI backend with an AutoML pipeline running 5 simultaneous models.",
+    outcome: "In Development · datastatz.com",
+    highlights: [
+      "6-service FastAPI backend: Parser, Cleaning, EDA, Scope, Insight, AutoML",
+      "AutoML pipeline running 5 simultaneous models with ranked comparison and confidence scoring",
+      "Supabase Postgres for persistent report sharing and stateless OTP auth",
+    ],
+    github: null,
+    live: "https://datastatz.com",
+  },
+  {
+    id: "03",
     title: "Azure ML Income Prediction",
     category: "Machine Learning",
     gradient: "from-[#1e1b4b] via-[#312e81] to-[#0f172a]",
@@ -63,7 +81,7 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "03",
+    id: "04",
     title: "EchoForge AI",
     category: "Machine Learning",
     gradient: "from-[#0a0a1a] via-[#1a0a2e] to-[#0d0d1f]",
@@ -81,7 +99,7 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "04",
+    id: "05",
     title: "Nike Business Intelligence Dashboard",
     category: "Business Intelligence",
     gradient: "from-[#1c0a00] via-[#431407] to-[#0f172a]",
@@ -99,7 +117,7 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "05",
+    id: "06",
     title: "CollegeROI Digital Strategy",
     category: "Web",
     gradient: "from-[#0f172a] via-[#1e3a5f] to-[#0a0a1a]",
@@ -117,7 +135,7 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "06",
+    id: "07",
     title: "Titanic Kaggle Competition",
     category: "Machine Learning",
     gradient: "from-[#0f1f1a] via-[#064e3b] to-[#0f172a]",
@@ -135,7 +153,7 @@ export const projects: Project[] = [
     live: null,
   },
   {
-    id: "07",
+    id: "08",
     title: "Anime Recommendation System",
     category: "Machine Learning",
     gradient: "from-[#0d1a2e] via-[#0f3460] to-[#0a0a1a]",
