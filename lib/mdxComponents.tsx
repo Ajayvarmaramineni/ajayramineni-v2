@@ -1,5 +1,4 @@
 import type { MDXComponents } from "mdx/types";
-import Image from "next/image";
 
 export const mdxComponents: MDXComponents = {
   h1: ({ children }) => (
@@ -26,24 +25,35 @@ export const mdxComponents: MDXComponents = {
   strong: ({ children }) => (
     <strong className="text-[#f8f8f8] font-semibold">{children}</strong>
   ),
-  em: ({ children }) => <em className="italic">{children}</em>,
+  // Detect the "*- With Love, Aj✨*" signature and give it orange styling
+  em: ({ children }) => {
+    const text = typeof children === "string" ? children : "";
+    if (text.startsWith("- With Love")) {
+      return (
+        <em className="not-italic text-[#FD7F2C] font-mono text-sm mt-10 block">
+          {children}
+        </em>
+      );
+    }
+    return <em className="italic">{children}</em>;
+  },
   blockquote: ({ children }) => (
     <blockquote className="border-l-2 border-[#FD7F2C] pl-5 my-6">
-      <div className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem]">
+      {/* suppress p margins inside blockquotes */}
+      <div className="text-[#a1a1aa] italic leading-relaxed text-[0.95rem] [&>p]:my-0 [&>p]:not-italic">
         {children}
       </div>
     </blockquote>
   ),
-  ul: ({ children }) => (
-    <ul className="space-y-2 my-4 pl-4">{children}</ul>
-  ),
+  ul: ({ children }) => <ul className="my-4 pl-0 space-y-1">{children}</ul>,
   ol: ({ children }) => (
-    <ol className="space-y-2 my-4 pl-4 list-decimal">{children}</ol>
+    <ol className="my-4 pl-4 list-decimal space-y-1">{children}</ol>
   ),
   li: ({ children }) => (
-    <li className="text-[#a1a1aa] flex items-start gap-2">
+    <li className="text-[#a1a1aa] flex items-start gap-2 list-none">
       <span className="text-[#6366f1] mt-1 shrink-0">▸</span>
-      <span>{children}</span>
+      {/* suppress p margins/display inside li so flex layout stays clean */}
+      <span className="flex-1 [&>p]:my-0 [&>p]:inline">{children}</span>
     </li>
   ),
   pre: ({ children }) => (
@@ -52,7 +62,9 @@ export const mdxComponents: MDXComponents = {
     </pre>
   ),
   code: ({ children, className }) => (
-    <code className={`${className ?? ""} font-mono text-sm text-[#a1a1aa] leading-relaxed`}>
+    <code
+      className={`${className ?? ""} font-mono text-sm text-[#a1a1aa] leading-relaxed`}
+    >
       {children}
     </code>
   ),
