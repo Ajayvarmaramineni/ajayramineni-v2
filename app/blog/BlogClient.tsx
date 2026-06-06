@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { getArticles, getNightsPosts, getDearStrangerPosts, type BlogPost } from "@/lib/blogPosts";
+import type { BlogPost } from "@/lib/blogPosts";
 import BlogInkBg from "@/components/ui/BlogInkBg";
 
 function SeriesCard({ post, i, accentColor }: { post: BlogPost; i: number; accentColor: string }) {
@@ -41,10 +41,13 @@ function SeriesCard({ post, i, accentColor }: { post: BlogPost; i: number; accen
 
 // ── main component ─────────────────────────────────────────────────────────
 
-export default function BlogClient() {
-  const articles = getArticles();
-  const nightsPosts = getNightsPosts();
-  const dearStrangerPosts = getDearStrangerPosts();
+type Props = {
+  articles: BlogPost[];
+  nightsPosts: BlogPost[];
+  dearStrangerPosts: BlogPost[];
+};
+
+export default function BlogClient({ articles, nightsPosts, dearStrangerPosts }: Props) {
 
   return (
     <div className="relative pt-24 pb-20 overflow-hidden">

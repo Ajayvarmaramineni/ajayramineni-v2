@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter, Barlow_Condensed, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import CursorRing from "@/components/ui/CursorRing";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +29,6 @@ const jetbrains = JetBrains_Mono({
 });
 
 const BASE_URL = "https://ajayramineni.com";
-const OG_IMAGE = "/images/Aj.jpg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -57,7 +59,6 @@ export const metadata: Metadata = {
     description:
       "MS Business Analytics @ WPI · Turning raw data into decisions that matter.",
     siteName: "Ajay Ramineni",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Ajay Ramineni" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -65,11 +66,9 @@ export const metadata: Metadata = {
     creator: "@withloveeajay",
     title: "Ajay Ramineni — Data Strategist & ML Enthusiast",
     description: "MS Business Analytics @ WPI · Data Strategist · ML Engineer",
-    images: [OG_IMAGE],
   },
   icons: {
     icon: "/icon.svg",
-    apple: "/images/Aj.jpg",
   },
   robots: {
     index: true,
@@ -94,24 +93,24 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${barlow.variable} ${jetbrains.variable}`}
     >
-      <head>
-        {/* Google Analytics 4 */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-X1WMTDN4TH"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-X1WMTDN4TH');
-            `,
-          }}
-        />
-      </head>
+      <head />
       <body className="bg-[#080808] text-[#f8f8f8] antialiased">
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, Clock } from "lucide-react";
-import { getTopPosts } from "@/lib/blogPosts";
+import type { BlogPost } from "@/lib/blogPosts";
 
-export default function RecentPosts() {
-  const posts = getTopPosts(4);
+export default function RecentPosts({ posts }: { posts: BlogPost[] }) {
 
   return (
     <section className="py-24 lg:py-32">
